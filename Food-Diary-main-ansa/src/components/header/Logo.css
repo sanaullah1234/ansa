@@ -1,0 +1,39 @@
+/* src/Logo.css */
+.logo-container {
+    width: 150px;
+    height: 72px;
+    opacity: 1; /* Set opacity to 1 to make the logo visible */
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    position: absolute; /* Use absolute positioning */
+    left: 112px; /* Distance from the left edge */
+    margin-top: 20px; /* Add top margin */
+    z-index: 1; /* Ensure logo is above other elements */
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .logo-container {
+      width: 120px; /* Adjust width for medium screens */
+      height: 56px; /* Adjust height proportionally */
+      left: 8%; /* Adjust left positioning to be responsive */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-container {
+      width: 100px; /* Adjust width for small screens */
+      height: 48px; /* Adjust height proportionally */
+      left: 10%; /* Adjust left positioning to be responsive */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .logo-container {
+      width: 80px; /* Adjust width for very small screens */
+      height: 36px; /* Adjust height proportionally */
+      left: 12%; /* Adjust left positioning to be responsive */
+    }
+  }
+  

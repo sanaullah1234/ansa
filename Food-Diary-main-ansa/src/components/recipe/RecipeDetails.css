@@ -1,0 +1,111 @@
+.recipe-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.styled-image-wrapper-recipe {
+  top: 120px; 
+}
+
+.container-nav{
+  margin-top: 130px;
+}
+
+.recipe-content {
+  background-color: rgba(139, 136, 136, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.recipe-image {
+  width: 549px;
+  height: 549px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  margin-left: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p,
+ul {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ingredient-icon {
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #509e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.ingredient-title {
+  font-family: "Roboto";
+  font-size: var(--BodyLargeSize);
+  font-weight: 400;
+  line-height: var(--BodyLargeLineHeight);
+  letter-spacing: var(--BodyLargeTracking);
+  text-align: left;
+}
+
+.ingredient-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #a2a8ba;
+}
+
+@media (max-width: 768px) {
+  .container-nav{
+    margin-top: 180px;
+  }
+  .recipe-details {
+    flex-direction: column;
+  }
+  .recipe-content{
+    max-width: 100%;
+  }
+
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
